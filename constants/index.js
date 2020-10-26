@@ -6,8 +6,8 @@
 //   process.env.NODE_ENV == "development"
 //     ? "http://localhost:5000/api/"
 //     : "http://159.89.89.127:5000/api/";
-
-const host = 'http://159.89.89.127:5000/api/';
+const host = 'https://pumpkin-pie-85222.herokuapp.com/api'
+//const host = 'http://159.89.89.127:5000/api/';
 const baseUrl =' http://159.89.89.127:5000/api/';
 const recaptchaKey = "6LdM-dYZAAAAAJ8W7mLb8l-AJ4UGWHjUUQbD1he2"; //shouldn't be here
 const recaptchaSecret = "6LcZFewUAAAAAEMwQ7Q4eCOm5L2NyFsG-ij2CR3w"; //this too
@@ -31,7 +31,7 @@ const Routes = {
   regenerateEmailToken: host + "users/regenerateEmailVerificationToken",
   forgetPassword: host + "users/forgotPassword/",
   reset_password: host + "users/resetPassword/",  //token must be appended
-  login: host + "users/login",
+  login: host + "/auth",
   newsLetter: host + "users/newsletter_subscription",
   user_home: host + "users/home",
   user_profile: host + "users/profile", //requires token in the header
