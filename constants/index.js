@@ -1,11 +1,14 @@
-const host =
-  process.env.NODE_ENV == "development"
-    ? "http://localhost:5000/api/"
-    : "http://159.89.89.127:5000/api/";
-const baseUrl =
-  process.env.NODE_ENV == "development"
-    ? "http://localhost:5000/api/"
-    : "http://159.89.89.127:5000/api/";
+// const host =
+//   process.env.NODE_ENV == "development"
+//     ? "http://localhost:5000/api/"
+//     : "http://159.89.89.127:5000/api/";
+// const baseUrl =
+//   process.env.NODE_ENV == "development"
+//     ? "http://localhost:5000/api/"
+//     : "http://159.89.89.127:5000/api/";
+
+const host = 'http://159.89.89.127:5000/api/';
+const baseUrl =' http://159.89.89.127:5000/api/';
 const recaptchaKey = "6LdM-dYZAAAAAJ8W7mLb8l-AJ4UGWHjUUQbD1he2"; //shouldn't be here
 const recaptchaSecret = "6LcZFewUAAAAAEMwQ7Q4eCOm5L2NyFsG-ij2CR3w"; //this too
 const site_key = "6LeT9dYZAAAAAEgB0sMkx_-d07xf3NZ4mpvpI50T";
